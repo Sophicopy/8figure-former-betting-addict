@@ -36,6 +36,12 @@ import unittest
   src: url('../Fonts/Poppins/Poppins-Regular.ttf');
   
   }
+
+@font-face{
+  font-family: Poppins;
+  src: url('Poppins-Regular.ttf');
+  
+  }
   
   @font-face{
   font-family: Poppins-b;
@@ -164,11 +170,12 @@ import unittest
   	font-family: var(--fontb);
    	color: black;
    	font-size: 20px;
-   	margin: 30px;
+   	margin: 30px 10px;
    	white-space: pre-wrap;
    	background: #D6D2D2;
    	border: 2px solid black;
    	padding: 20px;
+	  width: 100%;
   }
   
   li{
@@ -267,7 +274,7 @@ import unittest
   	text-align: left;
   }
    
-   section p{
+   .section-1 p{
    	width: 100%;
    	font-size: 20px;
    	margin-top: 22px;
