@@ -1,0 +1,496 @@
+#!/usr/bin/env python
+# encoding: utf-8
+"""
+boc.py
+
+Created by Sophia Oladapo on 8/1/22.
+Copyright (c) 2022 Copyright Holder. All rights reserved.
+"""
+
+import sys
+import os
+import unittest
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+
+import unittest
+
+:root{
+	--font: Montserrat-p, Helvetica;
+	--fontm: Montserrat, 'Montserrat', Helvetica;
+	--fontb: Montserrat-b, Helvetica;
+	--fontp: Montserrat-p, Helvetica;
+	--white: #E6E6E6;
+	--yellow: #EAE952;
+	}
+	
+	:root { 
+	--font: Montserrat-p, Helvetica;
+	--fontm: Montserrat, 'Montserrat', Helvetica;
+	--fontb: Montserrat-b, Helvetica;
+	--fontp: Montserrat-p, Helvetica;
+	--white: #E6E6E6;
+	--yellow: #EAE952;
+	}
+/*  */
+
+@font-face{
+  font-family: Poppins;
+  src: url('../Fonts/Poppins/Poppins-Regular.ttf');
+  
+  }
+  
+  
+  @font-face{
+  font-family: Poppins;
+  src: url('Poppins-Regular.ttf');
+  
+  }
+  
+   
+   
+  @font-face{
+  font-family: Montserrat;
+  src: url('../Fonts/Montserrat/Montserrat-ExtraBold.ttf');
+  
+  }
+  
+   @font-face{
+  font-family: Montserrat-p;
+  src: url('../Fonts/Montserrat/Montserrat-Regular.ttf');
+  
+  }
+  
+  
+   @font-face{
+  font-family: Montserrat-p;
+  src: url('Montserrat-Regular.ttf');
+  
+  }
+  
+  
+   @font-face{
+  font-family: Montserrat-b;
+  src: url('../Fonts/Montserrat/Montserrat-Bold.ttf');
+  
+  }
+  
+  
+  @font-face{
+  font-family: Montserrat-b;
+  src: url('Montserrat-Bold.ttf');
+  
+  }
+  
+  
+
+@font-face{
+  font-family: Montserrat;
+  src: url('Montserrat-ExtraBold.ttf');
+  
+  }
+
+ *{
+ 	padding:0;
+ 	margin: 0;
+ 	font-family: var(--font);
+ 	box-sizing: border-box;
+ 	font-size: 20px;
+ 	color: var(--white);
+  text-decoration: none;
+  pointer-events: none;
+ 	pointer: none;
+ }
+   body{
+   	
+   }
+   
+   
+  .section-1{
+  	background: black;
+  	width: 100%;
+  	padding: 20px;
+  	padding-bottom: 30px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	color: var(--white);	
+  	
+  }
+  
+  /*div.big{
+  	background-image: url(../images/male-2013929_640.jpg);
+  	background-size: contain;
+  	
+  }*/
+  
+ .space{
+ padding: 20px 0;
+ 	
+ } 
+
+.space .center{
+	color: black;
+	padding: 10px;
+} 
+ 
+  .section-1 .red{
+   	color: var(--white);
+   	font-size: 30px;
+   	text-align: center;
+   	font-family: var(--fontm);
+   font-weight: 800;
+   margin-top: 10px;
+   }
+  
+   
+ h2{
+  	font-family: var(--fontm);
+  	font-weight: 700;
+  	font-size: 29px;
+  	color: var(--white);
+  	text-align: center;
+  	margin: 10px 0;
+  	padding: 20px 0;
+  }
+  
+   .content{
+ display: flex;
+ flex-direction: column;
+ align-items: center;	
+ }
+ 
+ 
+ .intro{
+ 	color: var(--white);
+ 	font-family: var(--fontp);
+ 	font-size: 22px;
+  text-align: center;
+  width: 80%;
+  margin: 10px 0;
+ } 
+ 
+ 
+ 
+
+ .content u{
+ 	text-decoration: none;
+ 	background-color: var(--yellow);
+ 	color: black;
+ }
+ 
+ 
+  span.intro{
+   	font-size: 22px;
+   	text-align: center;
+   	color: var(--white);
+   	width: 80%;
+   }
+   
+   
+    p{
+   	width: 80%;
+   	color: var(--white);
+   	font-size: 22px;
+   	margin-top: 10px;
+   	white-space: pre-wrap;
+   	pointer-events: none;
+   }
+  
+ 
+ .center{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}    
+ 
+ 
+ .center h2{
+ 	color: black;
+ }
+ 
+ .content h3.red{
+ 	font-family: var(--fontb);
+ 	
+ } 
+ 
+  	
+  .h1{
+  	color: red;
+  	margin: none;
+  	font-family: var(--fontm);
+  	font-weight: 600;
+  	font-size: 25px;
+  	text-align: left;
+  }
+  
+ .flexbox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;	
+ } 
+  
+  
+  .box{
+  	white-space: pre-wrap;
+  	font-size: 19px;
+  	background: white;
+  	color: black;
+  	padding: 20px;
+  	width: 75%;
+  	border-radius: 20px;
+  	margin: 20px 0;
+  }
+  
+  
+  .box b{
+  	font-family: var(--fontb);
+  	color: black;
+  }
+  
+  
+  
+  img{
+  	width:400px;
+  	margin: 10px 0;
+  	border: 2px solid white;
+  }
+  
+  b{
+  	color: var(--white);
+  	font-family: var(--fontb);
+  	font-weight: 700;
+  	font-size: 20.5px;
+  	text-align: left;
+  } 
+
+  
+  u{
+  	text-align: left;
+  	font-family: var(--fontb);
+  	font-weight: 600;
+  	margin: 10px 0;
+  	text-decoration: underline;
+  }
+  
+  .list{
+  	width: 100%;
+  	font-size: 20px;
+   	color: black;
+   	white-space: pre-wrap;
+   	background: white;
+   	border: 2px solid black;
+   	padding: 20px;
+  }
+  
+  .list li{
+  	font-family: var(--font);
+  	color: black;
+  	margin: 0;
+  	font-size: 20px;
+  }
+  
+ ul{
+ 	width: 70%;
+ 	white-space: pre-wrap;
+ } 
+
+
+ 
+ li{
+  	text-align: left;
+  	font-family: var(--font);
+  	font-weight: 400;
+  	font-size: 20px;
+  	color: white;
+  	margin: 5px 0;
+    
+  }
+  
+  
+  .list #red{
+   margin: 0 0 0 0;	
+   font-size: 20px;
+   background: none;
+   color: red;
+   text-align: center;
+  }
+  
+  .list h2{
+  	color: red;
+  }
+  
+  #red{
+   	  color: black;
+   	  text-align: left;
+   	  background: yellow;
+   	  font-size: 20px;
+   	  padding: 5px;
+   	  margin-top: 10px;
+   }
+   
+   section .red{
+   	 margin: 20px 0;
+   }
+   
+  
+ .button{
+   	display: inline-block;
+   	font-size: 25px;
+   	color: white;
+   	background-color: #CA1010;
+   	font-family: var(--fontp);
+   	padding: 20px;
+   	font-weight: 700;
+   	margin-bottom: 20px;
+   	text-align: center;
+   	border-radius: 5px;
+   	width: 100%;
+   }
+   
+   .button:hover{
+   	border: 2px solid white;
+   }
+  
+  
+  footer{
+  	padding: 20px 0;
+  	font-size: 18px;
+  	text-align: center;
+  	color: black;
+  } 
+  
+  
+  footer i{
+  	color: black;
+  }
+  
+  
+   @media (max-width: 900px){
+   .section-1{
+  	width: 100%;
+  	
+  }
+  
+  /* #red = b with yellow background*/
+   #red{
+   	  font-size: 19px;
+   	  color: black;
+   	  text-align: left;
+   }
+   
+  /*.red = h1*/
+   .section-1 .content .red, section .red{
+   	font-size: 25px;
+   	text-align: center;
+   	width: 100%;
+   }
+  
+  .content .intro{
+  	font-size: 19px;
+  }
+  
+    img{
+  	width: 300px;
+  }
+  
+  b{
+  	text-align: left;
+  	font-size: 19px;
+  }
+   
+   p{
+   	width: 100%;
+   	font-size: 19px;
+   	margin-top: 12px;
+   	white-space: pre-wrap;
+   	padding: 10px 20px;
+ 	
+   }
+  
+  
+  .box{
+  	width: 90%;
+  }
+  
+  
+.list, .list li{
+ 	font-size: 18px;
+ } 
+ 
+ 
+ span.intro{
+  	width: 100%;
+  }
+ 
+  .button{
+   	display: inline-block;
+   	font-size: 19px;
+   }
+   
+    h2{
+    	margin: 15px 0;
+    }
+   	
+   }
+   
+   
+   
+   
+   @media (max-width: 300px){
+   	
+    .section-1{
+  	width: 100%;
+  	
+  }
+  
+  /* #red = b with yellow background*/
+   #red{
+   	  font-size: 19px;
+   	  color: black;
+   	  text-align: left;
+   }
+   
+  /*.red = h1*/
+   .section-1 .content .red, section .red{
+   	font-size: 25px;
+   	text-align: center;
+   	width: 100%;
+   }
+  
+  .content .intro{
+  	font-size: 18px;
+  }
+  
+    img{
+  	width: 280px;
+  }
+  
+  b{
+  	text-align: left;
+  	font-size: 18px;
+  }
+   
+   p{
+   	width: 100%;
+   	font-size: 18px;
+   	margin-top: 22px;
+   	white-space: pre-wrap;
+   	padding: 10px 20px;
+ 	
+   }
+  	
+   	
+   	
+   	
+   	
+   	
+   	
+   	
+  	}
